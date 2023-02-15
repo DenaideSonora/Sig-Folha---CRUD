@@ -16,8 +16,7 @@ describe('Acesso ao Cadastro de Pessoa - Sig Folha', () => {
     it('Exclusão', () => {
         exclusao.elements.limpar().click()
         exclusao.elements.pesquisaCodigo().click().should("be.visible")
-        exclusao.elements.pesquisaNome().click().type("Teste Page Object").should("be.visible")
-        //exclusao.elements.pesquisaNome().click().type("Teste Page Object", {delay: 0}).should("be.visible").wait(3000)
+        exclusao.elements.pesquisaNome().click().type("Teste Page Object", {delay: 0}).should("be.visible").wait(3000)
         exclusao.elements.pesquisarBotao().click().should("be.visible")
         exclusao.elements.carregarBotao().first().click()
         exclusao.elements.excluirBotao().click()
